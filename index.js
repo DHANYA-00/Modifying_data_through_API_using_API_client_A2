@@ -10,8 +10,8 @@ app.use(express.json());
 
 
 
-const uri = process.env.uri
-mongoose.connect(uri)
+const URI = process.env.URI
+mongoose.connect(URI)
 .then(()=>{
   console.log('Database connected successfully!')
 })
